@@ -103,7 +103,7 @@ class VoyagerServiceProvider extends ServiceProvider
 
         $this->loadMigrationsFrom(realpath(__DIR__.'/../migrations'));
 
-        $this->registerGates();
+//        $this->registerGates();
 
         $this->registerViewComposers();
 
