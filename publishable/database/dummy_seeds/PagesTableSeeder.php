@@ -258,7 +258,7 @@ class PagesTableSeeder extends Seeder
         }
 
         //Permissions
-        Permission::generateFor('pages');
+//        Permission::generateFor('pages');
         //Content
         $page = Page::firstOrNew([
             'slug' => 'hello-world',

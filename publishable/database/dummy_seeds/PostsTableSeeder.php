@@ -330,7 +330,7 @@ class PostsTableSeeder extends Seeder
         }
 
         //Permissions
-        Permission::generateFor('posts');
+//        Permission::generateFor('posts');
 
         //Content
         $post = $this->findPost('lorem-ipsum-post');
