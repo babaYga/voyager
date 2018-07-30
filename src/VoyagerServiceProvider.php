@@ -93,7 +93,7 @@ class VoyagerServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'voyager');
 
-        $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
+//        $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
 
         $this->loadTranslationsFrom(realpath(__DIR__.'/../publishable/lang'), 'voyager');
 
