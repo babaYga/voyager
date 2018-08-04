@@ -129,8 +129,8 @@ class InstallCommand extends Command
             $this->call('vendor:publish', ['--provider' => VoyagerServiceProvider::class, '--tag' => 'config']);
         }
 
-        $this->info('Setting up the hooks');
-        $this->call('hook:setup');
+//        $this->info('Setting up the hooks');
+//        $this->call('hook:setup');
 
         $this->info('Adding the storage symlink to your public folder');
         $this->call('storage:link');
