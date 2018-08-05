@@ -13,6 +13,9 @@ class VoyagerController extends Controller
 {
     public function index()
     {
+        if (empty(Auth::user())) {
+            return redirect()->route('voyager.login');
+        }
         return Voyager::view('voyager::index');
     }
 

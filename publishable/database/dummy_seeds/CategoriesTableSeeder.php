@@ -180,7 +180,7 @@ class CategoriesTableSeeder extends Seeder
         }
 
         //Permissions
-        Permission::generateFor('categories');
+//        Permission::generateFor('categories');
 
         //Content
         $category = Category::firstOrNew([
