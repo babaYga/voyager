@@ -91,13 +91,13 @@
               <div style="clear:both"></div>
 
               @if(!$errors->isEmpty())
-              <div class="alert alert-red">
-                <ul class="list-unstyled">
-                    @foreach($errors->all() as $err)
-                    <li>{{ $err }}</li>
-                    @endforeach
-                </ul>
-              </div>
+                  <div class="alert alert-red">
+                    <ul class="list-unstyled">
+                        @foreach($errors->all() as $err)
+                            <li>{{ $err }}</li>
+                        @endforeach
+                    </ul>
+                  </div>
               @endif
 
             </div> <!-- .login-container -->

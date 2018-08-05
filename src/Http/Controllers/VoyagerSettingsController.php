@@ -11,7 +11,7 @@ class VoyagerSettingsController extends Controller
     public function index()
     {
         // Check permission
-        $this->authorize('browse', Voyager::model('Setting'));
+//        $this->authorize('browse', Voyager::model('Setting'));
 
         $data = Voyager::model('Setting')->orderBy('order', 'ASC')->get();
 
